@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1EC6404624BA61720098331C /* swift_apodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC6404524BA61720098331C /* swift_apodApp.swift */; };
+		1EC6404824BA61720098331C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC6404724BA61720098331C /* ContentView.swift */; };
+		1EC6404A24BA61740098331C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EC6404924BA61740098331C /* Assets.xcassets */; };
+		1EC6404D24BA61740098331C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EC6404C24BA61740098331C /* Preview Assets.xcassets */; };
+		1EC6405B24BA618E0098331C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC6405A24BA618E0098331C /* WidgetKit.framework */; };
+		1EC6405D24BA618E0098331C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC6405C24BA618E0098331C /* SwiftUI.framework */; };
+		1EC6406024BA618E0098331C /* ApodWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC6405F24BA618E0098331C /* ApodWidgetEntryView.swift */; };
+		1EC6406324BA61900098331C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EC6406224BA61900098331C /* Assets.xcassets */; };
+		1EC6406524BA61900098331C /* ApodWidgetEntryView.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1EC6406124BA618E0098331C /* ApodWidgetEntryView.intentdefinition */; };
+		1EC6406624BA61900098331C /* ApodWidgetEntryView.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1EC6406124BA618E0098331C /* ApodWidgetEntryView.intentdefinition */; };
+		1EC6406924BA61900098331C /* swift-apod-widgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1EC6405824BA618E0098331C /* swift-apod-widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1EC6407224BB92DA0098331C /* ApodApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC6407124BB92DA0098331C /* ApodApi.swift */; };
+		1EC6407324BB92DA0098331C /* ApodApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC6407124BB92DA0098331C /* ApodApi.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1EC6406724BA61900098331C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EC6403A24BA61720098331C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EC6405724BA618E0098331C;
+			remoteInfo = "swift-apod-widgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1EC6406D24BA61900098331C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1EC6406924BA61900098331C /* swift-apod-widgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1EC6404224BA61720098331C /* swift-apod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-apod.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EC6404524BA61720098331C /* swift_apodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_apodApp.swift; sourceTree = "<group>"; };
+		1EC6404724BA61720098331C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1EC6404924BA61740098331C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1EC6404C24BA61740098331C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1EC6404E24BA61740098331C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EC6405824BA618E0098331C /* swift-apod-widgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "swift-apod-widgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EC6405A24BA618E0098331C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		1EC6405C24BA618E0098331C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		1EC6405F24BA618E0098331C /* ApodWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodWidgetEntryView.swift; sourceTree = "<group>"; };
+		1EC6406124BA618E0098331C /* ApodWidgetEntryView.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = ApodWidgetEntryView.intentdefinition; sourceTree = "<group>"; };
+		1EC6406224BA61900098331C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1EC6406424BA61900098331C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EC6407124BB92DA0098331C /* ApodApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodApi.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1EC6403F24BA61720098331C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EC6405524BA618E0098331C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EC6405D24BA618E0098331C /* SwiftUI.framework in Frameworks */,
+				1EC6405B24BA618E0098331C /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EC6403924BA61720098331C = {
+			isa = PBXGroup;
+			children = (
+				1EC6404424BA61720098331C /* swift-apod */,
+				1EC6405E24BA618E0098331C /* swift-apod-widget */,
+				1EC6405924BA618E0098331C /* Frameworks */,
+				1EC6404324BA61720098331C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1EC6404324BA61720098331C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1EC6404224BA61720098331C /* swift-apod.app */,
+				1EC6405824BA618E0098331C /* swift-apod-widgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1EC6404424BA61720098331C /* swift-apod */ = {
+			isa = PBXGroup;
+			children = (
+				1EC6404524BA61720098331C /* swift_apodApp.swift */,
+				1EC6404724BA61720098331C /* ContentView.swift */,
+				1EC6404924BA61740098331C /* Assets.xcassets */,
+				1EC6404E24BA61740098331C /* Info.plist */,
+				1EC6404B24BA61740098331C /* Preview Content */,
+				1EC6407124BB92DA0098331C /* ApodApi.swift */,
+			);
+			path = "swift-apod";
+			sourceTree = "<group>";
+		};
+		1EC6404B24BA61740098331C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1EC6404C24BA61740098331C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1EC6405924BA618E0098331C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EC6405A24BA618E0098331C /* WidgetKit.framework */,
+				1EC6405C24BA618E0098331C /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1EC6405E24BA618E0098331C /* swift-apod-widget */ = {
+			isa = PBXGroup;
+			children = (
+				1EC6405F24BA618E0098331C /* ApodWidgetEntryView.swift */,
+				1EC6406124BA618E0098331C /* ApodWidgetEntryView.intentdefinition */,
+				1EC6406224BA61900098331C /* Assets.xcassets */,
+				1EC6406424BA61900098331C /* Info.plist */,
+			);
+			path = "swift-apod-widget";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1EC6404124BA61720098331C /* swift-apod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EC6405124BA61740098331C /* Build configuration list for PBXNativeTarget "swift-apod" */;
+			buildPhases = (
+				1EC6403E24BA61720098331C /* Sources */,
+				1EC6403F24BA61720098331C /* Frameworks */,
+				1EC6404024BA61720098331C /* Resources */,
+				1EC6406D24BA61900098331C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EC6406824BA61900098331C /* PBXTargetDependency */,
+			);
+			name = "swift-apod";
+			productName = "swift-apod";
+			productReference = 1EC6404224BA61720098331C /* swift-apod.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1EC6405724BA618E0098331C /* swift-apod-widgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EC6406A24BA61900098331C /* Build configuration list for PBXNativeTarget "swift-apod-widgetExtension" */;
+			buildPhases = (
+				1EC6405424BA618E0098331C /* Sources */,
+				1EC6405524BA618E0098331C /* Frameworks */,
+				1EC6405624BA618E0098331C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "swift-apod-widgetExtension";
+			productName = "swift-apod-widgetExtension";
+			productReference = 1EC6405824BA618E0098331C /* swift-apod-widgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1EC6403A24BA61720098331C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					1EC6404124BA61720098331C = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					1EC6405724BA618E0098331C = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = 1EC6403D24BA61720098331C /* Build configuration list for PBXProject "swift-apod" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1EC6403924BA61720098331C;
+			productRefGroup = 1EC6404324BA61720098331C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1EC6404124BA61720098331C /* swift-apod */,
+				1EC6405724BA618E0098331C /* swift-apod-widgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1EC6404024BA61720098331C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EC6404D24BA61740098331C /* Preview Assets.xcassets in Resources */,
+				1EC6404A24BA61740098331C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EC6405624BA618E0098331C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EC6406324BA61900098331C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1EC6403E24BA61720098331C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EC6404824BA61720098331C /* ContentView.swift in Sources */,
+				1EC6404624BA61720098331C /* swift_apodApp.swift in Sources */,
+				1EC6406624BA61900098331C /* ApodWidgetEntryView.intentdefinition in Sources */,
+				1EC6407224BB92DA0098331C /* ApodApi.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EC6405424BA618E0098331C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EC6406524BA61900098331C /* ApodWidgetEntryView.intentdefinition in Sources */,
+				1EC6407324BB92DA0098331C /* ApodApi.swift in Sources */,
+				1EC6406024BA618E0098331C /* ApodWidgetEntryView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1EC6406824BA61900098331C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EC6405724BA618E0098331C /* swift-apod-widgetExtension */;
+			targetProxy = 1EC6406724BA61900098331C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1EC6404F24BA61740098331C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1EC6405024BA61740098331C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1EC6405224BA61740098331C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"swift-apod/Preview Content\"";
+				DEVELOPMENT_TEAM = BLQ756XNSL;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "swift-apod/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.herrmannplatz.swift-apod";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1EC6405324BA61740098331C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"swift-apod/Preview Content\"";
+				DEVELOPMENT_TEAM = BLQ756XNSL;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "swift-apod/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.herrmannplatz.swift-apod";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1EC6406B24BA61900098331C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BLQ756XNSL;
+				INFOPLIST_FILE = "swift-apod-widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.herrmannplatz.swift-apod.swift-apod-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1EC6406C24BA61900098331C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BLQ756XNSL;
+				INFOPLIST_FILE = "swift-apod-widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.herrmannplatz.swift-apod.swift-apod-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1EC6403D24BA61720098331C /* Build configuration list for PBXProject "swift-apod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EC6404F24BA61740098331C /* Debug */,
+				1EC6405024BA61740098331C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EC6405124BA61740098331C /* Build configuration list for PBXNativeTarget "swift-apod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EC6405224BA61740098331C /* Debug */,
+				1EC6405324BA61740098331C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EC6406A24BA61900098331C /* Build configuration list for PBXNativeTarget "swift-apod-widgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EC6406B24BA61900098331C /* Debug */,
+				1EC6406C24BA61900098331C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1EC6403A24BA61720098331C /* Project object */;
+}
